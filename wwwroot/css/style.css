@@ -1,0 +1,29 @@
+html {
+  background: url(/img/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.landingTitle {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.landingNav {
+  position: fixed;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.landingLinks > a {
+  font-size: 1.7em;
+}
