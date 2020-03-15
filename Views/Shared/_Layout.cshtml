@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,10 +9,46 @@
     <link rel="stylesheet" href="~/lib/bulma/css/bulma.css">
     <link rel="stylesheet" href="~/lib/fontawesome/css/all.min.css">
 </head>
-<body>
-    @RenderBody()
-    <footer>
 
-    </footer>
+<body>
+    <section class="hero is-fullheight">
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head">
+            <header class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" asp-controller="Home" asp-action="Index">
+                            <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+                        </a>
+                        <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenuHeroC" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a class="navbar-item" asp-controller="Home" asp-action="Index">
+                                Home
+                            </a>
+                            <a class="navbar-item">
+                                About
+                            </a>
+                            <a class="navbar-item" asp-controller="Portfolio" asp-action="Categories">
+                                Porfolio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        @RenderBody()
+        <!-- Hero footer: will stick at the bottom -->
+        <div class="hero-foot">
+            <p></p>
+        </div>
+    </section>
 </body>
+
+<script src="~/js/menu.js"></script>
 </html>

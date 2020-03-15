@@ -1,12 +1,12 @@
-html {
+/* html {
   background: url(/img/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+} */
 
-.landingTitle {
+/* .landingTitle {
   height: 100%;
   width: 100%;
   display: flex;
@@ -24,6 +24,7 @@ html {
   z-index: 1;
 }
 
-.landingLinks > a {
+.landingNav > a {
+  color: white;
   font-size: 1.7em;
-}
+} */
